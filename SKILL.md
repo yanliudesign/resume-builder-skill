@@ -69,9 +69,10 @@ description: "简历生成与美化 OS。两种入口：把已有简历(PDF/Word
 
    选模板提示：**海投/过机器筛 → Classic/ATS 或 Ledger**；**人直接看/内推/作品集向 → 其余几套更出彩**。
 3. **渲染**：读取选定模板，**保留其 `<style>` 不动**，把示例内容替换成用户的真实数据，删掉用不到的板块（模板里每个 `<section>` 可整块删）。生成一个自包含的单文件 HTML。
-4. **输出**：保存为 `<姓名>-resume-<模板>.html`。按用户全局偏好默认存到 `/Users/yanliu/Desktop/Claude skills/`（其他用户则存当前目录或询问）。
-5. **告诉用户怎么转 PDF**：浏览器打开 → `Cmd+P` → 目标选"另存为 PDF" → 边距设 None/Default、勾选背景图形 → 保存。
-6. **可换模板重渲染**：结构化数据已在手，用户说"换 Modern 试试"就直接读另一套模板重渲染，无需重新采集。
+4. **同时输出可编辑版**：再生成一份 `<姓名>-resume-<模板>-editable.html`，加上 `contenteditable` + 浮动工具条（详见 `prompts/editable-version.md`）。打印时编辑高亮和工具条自动隐藏，PDF 输出干净。
+5. **输出**：两个文件都保存为 `<姓名>-resume-<模板>.html` 和 `<姓名>-resume-<模板>-editable.html`。按用户全局偏好默认存到 `/Users/yanliu/Desktop/Claude skills/`（其他用户则存当前目录或询问）。
+6. **告诉用户怎么转 PDF**：浏览器打开 → `Cmd+P` → 目标选"另存为 PDF" → 边距设 None/Default、勾选背景图形 → 保存。editable 版可以先在浏览器里点字微调再 `Cmd+P`，工具条上有现成按钮。
+7. **可换模板重渲染**：结构化数据已在手，用户说"换 Modern 试试"就直接读另一套模板重渲染，无需重新采集。
 
 ---
 
@@ -91,5 +92,6 @@ description: "简历生成与美化 OS。两种入口：把已有简历(PDF/Word
 - `prompts/interview.md` — 对话式采集脚本
 - `prompts/linkedin-import.md` — LinkedIn 导入与降级方案
 - `prompts/beautify.md` — 已有简历解析与诊断
+- `prompts/editable-version.md` — 把成品升级成浏览器可编辑版的注入片段
 - `guides/writing-tips.md` — bullet 写法、量化、ATS 关键词、常见错误
-- `templates/*.html` — 4 套打印优化模板
+- `templates/*.html` — 7 套打印优化模板
