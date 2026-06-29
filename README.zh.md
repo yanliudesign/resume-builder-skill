@@ -20,15 +20,15 @@
 
 ## 7 套模板
 
-| 模板 | 文件 | 适合 | ATS |
-|---|---|---|---|
-| **Classic / ATS** | [`templates/classic-ats.html`](templates/classic-ats.html) | 单栏无花哨,机器可解析,大公司海投最稳 | ✅ 友好 |
-| **Ledger 学术工程** | [`templates/ledger.html`](templates/ledger.html) | LaTeX 风衬线,两端对齐,嵌套子弹,软件/数据/工程岗 | ✅ 友好 |
-| **Tech 紧凑** | [`templates/tech-compact.html`](templates/tech-compact.html) | 高信息密度+等宽点缀,多项目塞一页 | 🟡 尚可 |
-| **Modern 侧栏** | [`templates/modern-sidebar.html`](templates/modern-sidebar.html) | 双栏+深色侧边栏,现代感强 | 🟡 一般 |
-| **Pillar 信息卡** | [`templates/pillar.html`](templates/pillar.html) | Enhancv 风,蓝点缀+技能胶囊+图标成就,产品/市场/PM | 🟡 一般 |
-| **Elegant 衬线** | [`templates/elegant-serif.html`](templates/elegant-serif.html) | 衬线居中编辑风,设计/咨询/市场 | 🟡 一般 |
-| **Atelier 极简** | [`templates/atelier.html`](templates/atelier.html) | 大量留白+细字大写名+竖线分栏,设计/创意/审美岗 | 🟡 一般 |
+| 预览 | 模板 | 适合 |
+|:---:|---|---|
+| <img src="docs/templates/classic-ats.png" width="200"> | **Classic / ATS**<br>[`classic-ats.html`](templates/classic-ats.html) | 单栏无花哨,机器可解析,大公司海投最稳 |
+| <img src="docs/templates/ledger.png" width="200"> | **Ledger 学术工程**<br>[`ledger.html`](templates/ledger.html) | LaTeX 风衬线,两端对齐,嵌套子弹,软件/数据/工程岗 |
+| <img src="docs/templates/tech-compact.png" width="200"> | **Tech 紧凑**<br>[`tech-compact.html`](templates/tech-compact.html) | 高信息密度+等宽点缀,多项目塞一页 |
+| <img src="docs/templates/modern-sidebar.png" width="200"> | **Modern 侧栏**<br>[`modern-sidebar.html`](templates/modern-sidebar.html) | 双栏+深色侧边栏,现代感强 |
+| <img src="docs/templates/pillar.png" width="200"> | **Pillar 信息卡**<br>[`pillar.html`](templates/pillar.html) | Enhancv 风,蓝点缀+技能胶囊+图标成就,产品/市场/PM |
+| <img src="docs/templates/elegant-serif.png" width="200"> | **Elegant 衬线**<br>[`elegant-serif.html`](templates/elegant-serif.html) | 衬线居中编辑风,设计/咨询/市场 |
+| <img src="docs/templates/atelier.png" width="200"> | **Atelier 极简**<br>[`atelier.html`](templates/atelier.html) | 大量留白+细字大写名+竖线分栏,设计/创意/审美岗 |
 
 **选模板提示**:海投/过机器筛 → Classic/ATS 或 Ledger;人直接看/内推/作品集向 → 其余几套更出彩。
 
