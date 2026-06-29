@@ -22,13 +22,13 @@ All three funnel into [`schema/resume-data.md`](schema/resume-data.md), then ren
 
 | Preview | Template | Best for |
 |:---:|---|---|
-| <img src="docs/templates/classic-ats.png" width="200"> | **Classic / ATS**<br>[`classic-ats.html`](templates/classic-ats.html) | Single-column, machine-parseable, safest for mass applications |
-| <img src="docs/templates/ledger.png" width="200"> | **Ledger**<br>[`ledger.html`](templates/ledger.html) | LaTeX-style serif, justified, nested bullets — SWE / data / eng |
-| <img src="docs/templates/tech-compact.png" width="200"> | **Tech Compact**<br>[`tech-compact.html`](templates/tech-compact.html) | High density + mono accents, fits many projects on one page |
-| <img src="docs/templates/modern-sidebar.png" width="200"> | **Modern Sidebar**<br>[`modern-sidebar.html`](templates/modern-sidebar.html) | Two-column with dark sidebar, modern feel |
-| <img src="docs/templates/pillar.png" width="200"> | **Pillar**<br>[`pillar.html`](templates/pillar.html) | Enhancv-style, blue accents + skill chips + icon achievements — PM / marketing |
-| <img src="docs/templates/elegant-serif.png" width="200"> | **Elegant Serif**<br>[`elegant-serif.html`](templates/elegant-serif.html) | Centered editorial serif — design / consulting / marketing |
-| <img src="docs/templates/atelier.png" width="200"> | **Atelier**<br>[`atelier.html`](templates/atelier.html) | Whitespace-heavy minimal — design / creative roles |
+| <img src="docs/templates/classic-ats.png" width="300"> | **Classic / ATS**<br>[`classic-ats.html`](templates/classic-ats.html) | Single-column, machine-parseable, safest for mass applications |
+| <img src="docs/templates/ledger.png" width="300"> | **Ledger**<br>[`ledger.html`](templates/ledger.html) | LaTeX-style serif, justified, nested bullets — SWE / data / eng |
+| <img src="docs/templates/tech-compact.png" width="300"> | **Tech Compact**<br>[`tech-compact.html`](templates/tech-compact.html) | High density + mono accents, fits many projects on one page |
+| <img src="docs/templates/modern-sidebar.png" width="300"> | **Modern Sidebar**<br>[`modern-sidebar.html`](templates/modern-sidebar.html) | Two-column with dark sidebar, modern feel |
+| <img src="docs/templates/pillar.png" width="300"> | **Pillar**<br>[`pillar.html`](templates/pillar.html) | Enhancv-style, blue accents + skill chips + icon achievements — PM / marketing |
+| <img src="docs/templates/elegant-serif.png" width="300"> | **Elegant Serif**<br>[`elegant-serif.html`](templates/elegant-serif.html) | Centered editorial serif — design / consulting / marketing |
+| <img src="docs/templates/atelier.png" width="300"> | **Atelier**<br>[`atelier.html`](templates/atelier.html) | Whitespace-heavy minimal — design / creative roles |
 
 **Picking one:** mass-applying / passing the bots → Classic-ATS or Ledger; a human reads it / referral / portfolio-facing → the others stand out more.
 
