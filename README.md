@@ -42,11 +42,29 @@ All three funnel into [`schema/resume-data.md`](schema/resume-data.md), then ren
 2. **One question at a time.** Building a resume by conversation is an interview, not a questionnaire.
 3. **Structure first, render second.** Whatever the entry point, organize content into the `schema/resume-data.md` fields and confirm it before rendering HTML.
 
+## Editable variant — click any text to edit
+
+Every render produces **two files**:
+
+| File | Use |
+|---|---|
+| `<name>-resume-<template>.html` | Locked print-ready output — `Cmd+P` → PDF |
+| `<name>-resume-<template>-editable.html` | Click any text in the browser to edit; `Cmd+P` when done |
+
+The editable variant layers three things on top of any template (see [`prompts/editable-version.md`](prompts/editable-version.md)) without touching its visual design:
+
+- `contenteditable="true"` on the content container
+- Hover / focus affordance (dashed yellow → solid blue outline)
+- A floating toolbar (top-right) with **Save as PDF** and **Lock** buttons
+- `@media print` hides the toolbar and edit highlights so the exported PDF stays clean
+
+⚠️ Browser edits live only in the current tab — refresh and they're gone. Always `Cmd+P` to lock changes into a PDF.
+
 ## Usage
 
 Drop the whole `resume-skill/` folder into your skills directory (e.g. `~/.claude/skills/resume-skill/`) and just say *"beautify this resume"* (attach a PDF), *"I have no resume, let's build one"*, or *"here's my LinkedIn, make me one."* Claude reads `SKILL.md` and runs the matching flow.
 
-**Output:** a self-contained single-file HTML (`<name>-resume-<template>.html`). Open in a browser → `Cmd+P` → Save as PDF (margins None/Default, enable background graphics).
+**Output:** two self-contained single-file HTMLs — `<name>-resume-<template>.html` (locked) and `<name>-resume-<template>-editable.html` (click-to-edit). Open either in a browser → `Cmd+P` → Save as PDF (margins None/Default, **enable background graphics**).
 
 ## Layout
 ```
@@ -56,7 +74,8 @@ resume-skill/
 ├── prompts/
 │   ├── beautify.md                # Entry A: beautify an existing resume
 │   ├── linkedin-import.md         # Entry B: LinkedIn import + fallback
-│   └── interview.md               # Entry C: conversational collection
+│   ├── interview.md               # Entry C: conversational collection
+│   └── editable-version.md        # Injection snippet that upgrades any render into a click-to-edit page
 ├── guides/writing-tips.md         # Bullet craft, quantification, ATS keywords, common mistakes
 └── templates/                     # 11 print-optimized HTML templates
 ```

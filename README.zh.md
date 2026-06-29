@@ -42,11 +42,29 @@
 2. **一次只问一个问题。** 对话式建简历是访谈不是问卷。
 3. **先结构化,再渲染。** 不管入口是哪条,都先把内容整理成 `schema/resume-data.md` 定义的字段,确认无误后才套模板出 HTML。
 
+## 可编辑版 — 浏览器里点字就能改
+
+每次渲染自动输出**两个文件**:
+
+| 文件 | 用途 |
+|---|---|
+| `<姓名>-resume-<模板>.html` | 锁定成品, `Cmd+P` 直接出 PDF |
+| `<姓名>-resume-<模板>-editable.html` | 浏览器里点任何字就能改,改完 `Cmd+P` 出 PDF |
+
+可编辑版在任意模板上叠加 3 件东西(详见 [`prompts/editable-version.md`](prompts/editable-version.md)),完全不动模板视觉设计:
+
+- 在内容容器上加 `contenteditable="true"`
+- hover / focus 视觉提示(黄底虚线 → 蓝框)
+- 右上角浮动工具条:**Save as PDF** + **Lock** 两个按钮
+- `@media print` 把工具条和编辑高亮自动隐藏,PDF 输出干净
+
+⚠️ 浏览器里的修改只活在当前窗口,刷新会丢。改完一定要 `Cmd+P` 存成 PDF 才算落地。
+
 ## 用法
 
 把整个 `resume-skill/` 目录放到 skills 文件夹(如 `~/.claude/skills/resume-skill/`),然后直接说"帮我美化这份简历"(附 PDF)、"我没有简历,咱们聊聊帮我做一份"、"这是我的 LinkedIn,帮我建一份"。Claude 读 `SKILL.md` 走对应流程。
 
-**输出**:自包含的单文件 HTML(`<姓名>-resume-<模板>.html`),浏览器打开 → `Cmd+P` → 另存为 PDF(边距 None/Default、勾选背景图形)。
+**输出**:两份自包含的单文件 HTML — `<姓名>-resume-<模板>.html`(锁定)和 `<姓名>-resume-<模板>-editable.html`(点字即改)。任一份浏览器打开 → `Cmd+P` → 另存为 PDF(边距 None/Default、**勾选背景图形**)。
 
 ## 目录结构
 ```
@@ -56,7 +74,8 @@ resume-skill/
 ├── prompts/
 │   ├── beautify.md                # 入口 A:美化已有简历
 │   ├── linkedin-import.md         # 入口 B:LinkedIn 导入与降级方案
-│   └── interview.md               # 入口 C:对话式采集脚本
+│   ├── interview.md               # 入口 C:对话式采集脚本
+│   └── editable-version.md        # 把任何渲染成品升级为点击即改页面的注入片段
 ├── guides/writing-tips.md         # bullet 写法、量化、ATS 关键词、常见错误
 └── templates/                     # 11 套打印优化 HTML 模板
 ```
