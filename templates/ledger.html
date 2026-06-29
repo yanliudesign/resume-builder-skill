@@ -58,10 +58,12 @@
         <li>Rebuilt the checkout API serving 12M daily transactions; cut p95 latency from 1.2s to 380ms.
           <ul><li><span class="keyres">Key Result:</span> Lifted checkout conversion 8%, ~$3.1M incremental annual revenue.</li></ul>
         </li>
-        <li>Led migration of 40+ services to a unified gRPC mesh.
+        <li>Led migration of 40+ services to a unified gRPC mesh, decommissioning the legacy monolith ahead of schedule.
           <ul><li><span class="keyres">Stack:</span> Go, gRPC, Kubernetes, Kafka, PostgreSQL, AWS.</li></ul>
         </li>
-        <li>Owned on-call for the payments tier; reduced Sev1 incidents from 9 to 2 per quarter.</li>
+        <li>Designed an idempotent ledger and reconciliation engine that eliminated double-charge incidents and recovered $620K in stuck settlements.</li>
+        <li>Owned on-call for the payments tier; reduced Sev1 incidents from 9 to 2 per quarter and cut mean time-to-recovery by 65%.</li>
+        <li>Mentored 5 engineers and instituted a design-review process that shortened feature lead time from 6 to 3 weeks.</li>
       </ul>
     </div>
 
@@ -69,8 +71,31 @@
       <div class="l1"><span class="org">DataForge</span><span class="date">Jun 2018 — Dec 2020</span></div>
       <div class="l2"><span>Backend Engineer</span><span>Seattle, WA</span></div>
       <ul>
-        <li>Built an event-ingestion pipeline handling 2B events/day at 99.99% uptime.</li>
-        <li>Cut cloud spend $480K/year via tiered storage and autoscaling.</li>
+        <li>Built an event-ingestion pipeline handling 2B events/day at 99.99% uptime across three regions.</li>
+        <li>Cut cloud spend $480K/year via tiered storage, autoscaling, and Spot-instance scheduling.
+          <ul><li><span class="keyres">Stack:</span> Python, Kafka, Flink, Snowflake, Terraform, GCP.</li></ul>
+        </li>
+        <li>Shipped a self-serve schema registry adopted by 30+ internal teams, removing a recurring source of pipeline breakage.</li>
+        <li>Authored the on-call runbook and observability standards still used company-wide today.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="l1"><span class="org">Brightline Software</span><span class="date">Aug 2016 — May 2018</span></div>
+      <div class="l2"><span>Software Engineer</span><span>Portland, OR</span></div>
+      <ul>
+        <li>Developed REST services for a B2B logistics platform processing 4M shipments/year for 200+ enterprise customers.</li>
+        <li>Reduced API error rate from 2.4% to 0.3% by introducing contract testing and circuit breakers.</li>
+        <li>Migrated the primary datastore from MySQL to PostgreSQL with zero customer-facing downtime.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="l1"><span class="org">Northgate Labs</span><span class="date">Jun 2015 — Jul 2016</span></div>
+      <div class="l2"><span>Software Engineering Intern → Junior Engineer</span><span>Seattle, WA</span></div>
+      <ul>
+        <li>Built an internal metrics dashboard adopted by 4 teams, replacing manual weekly reporting.</li>
+        <li>Automated nightly ETL jobs, cutting report-generation time from 3 hours to 12 minutes.</li>
       </ul>
     </div>
   </section>
@@ -80,7 +105,12 @@
     <div class="entry">
       <div class="l1"><span class="org"><a href="#">OpenTrace</a></span><span class="date">2022 — Present</span></div>
       <div class="l2"><span>Creator · Go, OpenTelemetry</span><span>3.2K&nbsp;★</span></div>
-      <ul><li>Lightweight distributed-tracing library adopted by 5 companies in production.</li></ul>
+      <ul><li>Lightweight distributed-tracing library adopted by 5 companies in production; sub-1% sampling overhead.</li></ul>
+    </div>
+    <div class="entry">
+      <div class="l1"><span class="org"><a href="#">QueueLite</a></span><span class="date">2020 — 2022</span></div>
+      <div class="l2"><span>Maintainer · Rust</span><span>1.1K&nbsp;★</span></div>
+      <ul><li>Embeddable durable job queue with at-least-once delivery; powers 12+ open-source projects.</li></ul>
     </div>
   </section>
 
@@ -96,9 +126,11 @@
   <section>
     <h2>Certifications, Skills &amp; Interests</h2>
     <ul>
-      <li><span class="sub">Languages:</span> Go, Rust, Python, Java, SQL.</li>
-      <li><span class="sub">Infrastructure:</span> Kubernetes, gRPC, Kafka, PostgreSQL, Redis, Terraform, AWS.</li>
-      <li><span class="sub">Certifications:</span> AWS Solutions Architect – Associate (2022).</li>
+      <li><span class="sub">Languages:</span> Go, Rust, Python, Java, TypeScript, SQL, Bash.</li>
+      <li><span class="sub">Infrastructure:</span> Kubernetes, gRPC, Kafka, PostgreSQL, Redis, Flink, Terraform, AWS, GCP.</li>
+      <li><span class="sub">Practices:</span> Distributed systems, event-driven architecture, observability, CI/CD, chaos testing.</li>
+      <li><span class="sub">Certifications:</span> AWS Solutions Architect – Associate (2022); Certified Kubernetes Administrator – CKA (2023).</li>
+      <li><span class="sub">Achievements:</span> Internal "Engineering Excellence" award (2023); 2 patents pending on payment-routing systems; speaker at GopherCon regional meetup (2022).</li>
       <li><span class="sub">Interests:</span> Climbing; Mechanical keyboards; Distributed systems papers.</li>
     </ul>
   </section>

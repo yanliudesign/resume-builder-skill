@@ -58,14 +58,27 @@
       <ul>
         <li>Rebuilt the checkout API — p95 latency 1.2s → 380ms, conversion +8%.</li>
         <li>Migrated 40+ services to a unified gRPC mesh; cross-team integration time −60%.</li>
-        <li>Owned on-call for the payments tier; cut Sev1 incidents from 9 to 2 per quarter.</li>
+        <li>Designed an idempotent ledger and double-entry settlement engine processing $2.1B/yr with zero reconciliation breaks across 14 currencies.</li>
+        <li>Introduced a feature-flagged progressive rollout framework, reducing failed deploys 35% and enabling 60+ shipments/week.</li>
+        <li>Owned on-call for the payments tier; cut Sev1 incidents from 9 to 2 per quarter and authored 25+ runbooks adopted org-wide.</li>
+        <li>Mentored 4 engineers and led the backend hiring loop, interviewing 50+ candidates and shaping the leveling rubric.</li>
       </ul>
     </div>
     <div class="entry">
       <div class="row"><span><span class="title">Backend Engineer</span> · <span class="org">DataForge</span></span><span class="date mono">2018 — 2021</span></div>
       <ul>
-        <li>Event-ingestion pipeline at 2B events/day, 99.99% uptime.</li>
-        <li>Cut cloud spend $480K/yr via tiered storage + autoscaling.</li>
+        <li>Built an event-ingestion pipeline at 2B events/day with 99.99% uptime on Kafka + Flink.</li>
+        <li>Cut cloud spend $480K/yr via tiered storage, autoscaling, and spot-instance scheduling.</li>
+        <li>Shipped a self-serve analytics API that replaced 30+ bespoke ETL jobs and cut query latency 4×.</li>
+        <li>Hardened multi-region failover, lifting recovery from 22 min to under 90s via automated leader election.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span><span class="title">Software Engineer</span> · <span class="org">Northwind Systems</span></span><span class="date mono">2016 — 2018</span></div>
+      <ul>
+        <li>Decomposed a Java monolith into 12 services, halving release cycles from biweekly to twice weekly.</li>
+        <li>Added Redis caching and query tuning that cut average API response time from 640ms to 190ms.</li>
+        <li>Built the CI/CD foundation (Jenkins → containerized pipelines) used by 6 product teams.</li>
       </ul>
     </div>
   </section>
@@ -82,14 +95,29 @@
       <div class="stack mono">Rust</div>
       <ul><li>Embeddable SQL engine; 3× faster reads than SQLite on analytical workloads.</li></ul>
     </div>
+    <div class="entry">
+      <div class="proj-row"><span class="title">flowqueue</span><span class="date mono">1.4K ★</span></div>
+      <div class="stack mono">Go · Redis · Postgres</div>
+      <ul><li>Durable job-queue with exactly-once delivery and backpressure; powers 200M+ tasks/day at two startups.</li></ul>
+    </div>
   </section>
 
   <section>
     <h2>Skills</h2>
     <div class="skills-grid">
-      <span class="k">Languages</span><span>Go, Rust, Python, Java, SQL</span>
-      <span class="k">Infra</span><span>Kubernetes, gRPC, Kafka, PostgreSQL, Redis, AWS</span>
-      <span class="k">Tools</span><span>Terraform, Datadog, Bazel, Git</span>
+      <span class="k">Languages</span><span>Go, Rust, Python, Java, TypeScript, SQL</span>
+      <span class="k">Infra</span><span>Kubernetes, gRPC, Kafka, Flink, PostgreSQL, Redis, AWS, GCP</span>
+      <span class="k">Observability</span><span>OpenTelemetry, Datadog, Prometheus, Grafana</span>
+      <span class="k">Tooling</span><span>Terraform, Bazel, Docker, GitHub Actions, Git</span>
+      <span class="k">Practices</span><span>Distributed systems, event-driven design, API design, on-call/SRE, mentoring</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="skills-grid">
+      <span class="k">AWS</span><span>Solutions Architect — Professional (2023)</span>
+      <span class="k">CNCF</span><span>Certified Kubernetes Administrator, CKA (2022)</span>
     </div>
   </section>
 

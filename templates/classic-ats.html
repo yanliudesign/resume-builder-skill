@@ -59,7 +59,7 @@
 
   <section>
     <h2>Summary</h2>
-    <p class="summary">Backend engineer with 7 years building high-throughput distributed systems. Focused on reliability and developer velocity; led teams of up to 6. Looking for a staff-level role on payments or infrastructure.</p>
+    <p class="summary">Backend engineer with 9 years building high-throughput distributed systems across payments, data, and platform infrastructure. Focused on reliability, cost efficiency, and developer velocity; led teams of up to 6 and shipped systems serving billions of requests/day. Looking for a staff-level role on payments or infrastructure.</p>
   </section>
 
   <section>
@@ -69,7 +69,8 @@
       <ul>
         <li>Rebuilt the checkout API, cutting p95 latency from 1.2s to 380ms and lifting conversion 8%.</li>
         <li>Led migration of 40+ services to a unified gRPC mesh, reducing cross-team integration time by 60%.</li>
-        <li>Mentored 4 engineers; 2 promoted within a year.</li>
+        <li>Designed an idempotent ledger service processing $2.1B/year in transactions with zero double-charge incidents over 18 months.</li>
+        <li>Mentored 4 engineers (2 promoted within a year) and established the team's on-call runbook and SLO review process.</li>
       </ul>
     </div>
     <div class="entry">
@@ -77,6 +78,23 @@
       <ul>
         <li>Built an event-ingestion pipeline handling 2B events/day at 99.99% uptime.</li>
         <li>Cut cloud spend $480K/year by introducing tiered storage and autoscaling.</li>
+        <li>Replaced a batch ETL with a streaming Kafka pipeline, reducing data freshness from 6 hours to under 90 seconds.</li>
+        <li>Introduced schema-registry contracts that eliminated ~30 breaking-change incidents per quarter.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span><span class="title">Software Engineer</span>, <span class="org">Northbridge Systems</span></span><span class="date">2016 — 2018</span></div>
+      <ul>
+        <li>Developed REST APIs for a B2B analytics product scaling from 5K to 120K monthly active users.</li>
+        <li>Reduced average query time 45% by adding read replicas and indexing hot tables in PostgreSQL.</li>
+        <li>Automated the release pipeline with CI/CD, shrinking deploy time from 2 hours to 12 minutes.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span><span class="title">Software Engineering Intern</span>, <span class="org">Brightloop Labs</span></span><span class="date">Summer 2015</span></div>
+      <ul>
+        <li>Built an internal feature-flag service adopted by 8 product teams to gate experimental releases.</li>
+        <li>Wrote integration tests that raised backend coverage from 52% to 81%.</li>
       </ul>
     </div>
   </section>
@@ -91,9 +109,27 @@
 
   <section>
     <h2>Skills</h2>
-    <div class="skills-row"><b>Languages:</b> Go, Python, Java, SQL</div>
-    <div class="skills-row"><b>Infrastructure:</b> Kubernetes, gRPC, Kafka, PostgreSQL, AWS</div>
-    <div class="skills-row"><b>Tools:</b> Terraform, Datadog, Git</div>
+    <div class="skills-row"><b>Languages:</b> Go, Python, Java, SQL, TypeScript</div>
+    <div class="skills-row"><b>Infrastructure:</b> Kubernetes, gRPC, Kafka, PostgreSQL, Redis, AWS, GCP</div>
+    <div class="skills-row"><b>Tools:</b> Terraform, Datadog, Prometheus, Grafana, Git, GitHub Actions</div>
+    <div class="skills-row"><b>Practices:</b> Distributed systems design, event-driven architecture, observability, SLO/SLA management</div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row"><span><span class="title">OpenLedger</span> — <span class="org">Open-source double-entry ledger library (Go)</span></span><span class="date">2022 — Present</span></div>
+      <ul>
+        <li>Authored a lightweight ledger library with 2.4K GitHub stars, used by 30+ fintech projects in production.</li>
+        <li>Maintained a 95% test-coverage standard and reviewed 200+ community pull requests.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="skills-row">AWS Certified Solutions Architect — Professional (2023)</div>
+    <div class="skills-row">Certified Kubernetes Application Developer (CKAD) (2021)</div>
   </section>
 
 </div>
