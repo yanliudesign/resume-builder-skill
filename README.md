@@ -4,7 +4,7 @@
 
 > A Claude / Copilot **skill** that turns *"I need a good-looking resume"* into a stable, repeatable workflow. Every input flows into **one standardized data schema**, then renders through a swappable template — switching templates is just a skin change, content is never lost.
 
-![Seven print-ready resume templates rendered from one data schema](docs/preview.png)
+![Eleven print-ready resume templates rendered from one data schema](docs/preview.png)
 
 ---
 
@@ -18,7 +18,7 @@
 
 All three funnel into [`schema/resume-data.md`](schema/resume-data.md), then render through a template.
 
-## Seven templates
+## Eleven templates
 
 | Preview | Template | Best for |
 |:---:|---|---|
@@ -29,6 +29,10 @@ All three funnel into [`schema/resume-data.md`](schema/resume-data.md), then ren
 | <img src="docs/templates/pillar.png" width="300"> | **Pillar**<br>[`pillar.html`](templates/pillar.html) | Enhancv-style, blue accents + skill chips + icon achievements — PM / marketing |
 | <img src="docs/templates/elegant-serif.png" width="300"> | **Elegant Serif**<br>[`elegant-serif.html`](templates/elegant-serif.html) | Centered editorial serif — design / consulting / marketing |
 | <img src="docs/templates/atelier.png" width="300"> | **Atelier**<br>[`atelier.html`](templates/atelier.html) | Whitespace-heavy minimal — design / creative roles |
+| <img src="docs/templates/timeline.png" width="300"> | **Timeline**<br>[`timeline.html`](templates/timeline.html) | Vertical timeline spine — shows career progression at a glance |
+| <img src="docs/templates/swiss.png" width="300"> | **Swiss**<br>[`swiss.html`](templates/swiss.html) | Swiss grid, bold Helvetica + red accent — design / brand / creative |
+| <img src="docs/templates/executive.png" width="300"> | **Executive**<br>[`executive.html`](templates/executive.html) | Navy serif, understated gravitas — finance / consulting / senior leaders |
+| <img src="docs/templates/colorblock.png" width="300"> | **Color-block**<br>[`colorblock.html`](templates/colorblock.html) | Bold full-width coral header band — tech / marketing / energetic |
 
 **Picking one:** mass-applying / passing the bots → Classic-ATS or Ledger; a human reads it / referral / portfolio-facing → the others stand out more.
 
@@ -54,7 +58,7 @@ resume-skill/
 │   ├── linkedin-import.md         # Entry B: LinkedIn import + fallback
 │   └── interview.md               # Entry C: conversational collection
 ├── guides/writing-tips.md         # Bullet craft, quantification, ATS keywords, common mistakes
-└── templates/                     # 7 print-optimized HTML templates
+└── templates/                     # 11 print-optimized HTML templates
 ```
 
 ## Related skills

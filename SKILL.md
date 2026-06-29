@@ -56,7 +56,7 @@ description: "简历生成与美化 OS。两种入口：把已有简历(PDF/Word
 ## 渲染流程（三条入口共用的后半段）
 
 1. **确认结构化数据**：把整理好的 `resume-data` 内容回显给用户，确认无误（尤其数字）。
-2. **选模板**：7 套，问用户偏好（默认推荐 Classic/ATS，因为海投最稳）：
+2. **选模板**：11 套，问用户偏好（默认推荐 Classic/ATS，因为海投最稳）：
    | 模板 | 文件 | 适合 | ATS |
    |---|---|---|---|
    | **Classic / ATS** | `templates/classic-ats.html` | 单栏无花哨，机器可解析，大公司海投最稳 | ✅ 友好 |
@@ -66,6 +66,10 @@ description: "简历生成与美化 OS。两种入口：把已有简历(PDF/Word
    | **Pillar 信息卡** | `templates/pillar.html` | Enhancv 风，蓝点缀+技能胶囊+图标成就+语言进度点，产品/市场/PM | 🟡 一般 |
    | **Elegant 衬线** | `templates/elegant-serif.html` | 衬线居中编辑风，设计/咨询/市场等偏人文岗 | 🟡 一般 |
    | **Atelier 极简** | `templates/atelier.html` | 大量留白+细字大写名+竖线分栏，设计/创意/审美岗 | 🟡 一般 |
+   | **Timeline 时间轴** | `templates/timeline.html` | 左侧竖向时间轴脊柱，一眼看出职业成长轨迹 | 🟡 一般 |
+   | **Swiss 栅格** | `templates/swiss.html` | 瑞士栅格，粗体 Helvetica + 红点缀，设计/品牌/创意 | 🟡 一般 |
+   | **Executive 高管** | `templates/executive.html` | 藏青衬线，稳重有分量，金融/咨询/高管/资深领导 | 🟡 一般 |
+   | **Color-block 色块头** | `templates/colorblock.html` | 顶部整宽珊瑚色块，现代大胆，互联网/营销/年轻求职者 | 🟡 一般 |
 
    选模板提示：**海投/过机器筛 → Classic/ATS 或 Ledger**；**人直接看/内推/作品集向 → 其余几套更出彩**。
 3. **渲染**：读取选定模板，**保留其 `<style>` 不动**，把示例内容替换成用户的真实数据，删掉用不到的板块（模板里每个 `<section>` 可整块删）。生成一个自包含的单文件 HTML。
@@ -94,4 +98,4 @@ description: "简历生成与美化 OS。两种入口：把已有简历(PDF/Word
 - `prompts/beautify.md` — 已有简历解析与诊断
 - `prompts/editable-version.md` — 把成品升级成浏览器可编辑版的注入片段
 - `guides/writing-tips.md` — bullet 写法、量化、ATS 关键词、常见错误
-- `templates/*.html` — 7 套打印优化模板
+- `templates/*.html` — 11 套打印优化模板

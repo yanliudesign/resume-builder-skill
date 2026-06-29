@@ -4,7 +4,7 @@
 
 > 一个 Claude / Copilot **skill**,把"我需要一份好看的简历"变成一条稳定流程:所有素材先汇入一份**标准化结构化数据**,再套模板渲染。换模板只是换皮,内容不丢。
 
-![一份数据 schema 渲染出的七套打印优化模板](docs/preview.png)
+![一份数据 schema 渲染出的十一套打印优化模板](docs/preview.png)
 
 ---
 
@@ -18,7 +18,7 @@
 
 三条入口最终都把数据汇入 [`schema/resume-data.md`](schema/resume-data.md),再套模板渲染。
 
-## 7 套模板
+## 11 套模板
 
 | 预览 | 模板 | 适合 |
 |:---:|---|---|
@@ -29,6 +29,10 @@
 | <img src="docs/templates/pillar.png" width="300"> | **Pillar 信息卡**<br>[`pillar.html`](templates/pillar.html) | Enhancv 风,蓝点缀+技能胶囊+图标成就,产品/市场/PM |
 | <img src="docs/templates/elegant-serif.png" width="300"> | **Elegant 衬线**<br>[`elegant-serif.html`](templates/elegant-serif.html) | 衬线居中编辑风,设计/咨询/市场 |
 | <img src="docs/templates/atelier.png" width="300"> | **Atelier 极简**<br>[`atelier.html`](templates/atelier.html) | 大量留白+细字大写名+竖线分栏,设计/创意/审美岗 |
+| <img src="docs/templates/timeline.png" width="300"> | **Timeline 时间轴**<br>[`timeline.html`](templates/timeline.html) | 左侧竖向时间轴脊柱,一眼看出职业成长轨迹 |
+| <img src="docs/templates/swiss.png" width="300"> | **Swiss 栅格**<br>[`swiss.html`](templates/swiss.html) | 瑞士栅格,粗体 Helvetica + 红点缀,设计/品牌/创意 |
+| <img src="docs/templates/executive.png" width="300"> | **Executive 高管**<br>[`executive.html`](templates/executive.html) | 藏青衬线,稳重有分量,金融/咨询/高管/资深领导 |
+| <img src="docs/templates/colorblock.png" width="300"> | **Color-block 色块头**<br>[`colorblock.html`](templates/colorblock.html) | 顶部整宽珊瑚色块,现代大胆,互联网/营销/年轻求职者 |
 
 **选模板提示**:海投/过机器筛 → Classic/ATS 或 Ledger;人直接看/内推/作品集向 → 其余几套更出彩。
 
@@ -54,7 +58,7 @@ resume-skill/
 │   ├── linkedin-import.md         # 入口 B:LinkedIn 导入与降级方案
 │   └── interview.md               # 入口 C:对话式采集脚本
 ├── guides/writing-tips.md         # bullet 写法、量化、ATS 关键词、常见错误
-└── templates/                     # 7 套打印优化 HTML 模板
+└── templates/                     # 11 套打印优化 HTML 模板
 ```
 
 ## 配套 skill
