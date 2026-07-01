@@ -2,9 +2,9 @@
 
 > 🌐 **English** · [中文](./README.zh.md)
 >
-> 📦 Also available in the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** bundle — one-stop Career Copilot pack (JD · Resume · BQ).
+> 📦 Also available in the **[offer-toolkit-skill](https://github.com/yanliudesign/offer-toolkit-skill)** bundle — one-stop Career Coach pack (JD · Resume · BQ).
 
-> A Claude / Copilot **skill** that turns *"I need a good-looking resume"* into a stable, repeatable workflow. Every input flows into **one standardized data schema**, then renders through a swappable template — switching templates is just a skin change, content is never lost.
+> A Claude **skill** that turns *"I need a good-looking resume"* into a stable, repeatable workflow. Every input flows into **one standardized data schema**, then renders through a swappable template — switching templates is just a skin change, content is never lost.
 
 ![Eleven print-ready resume templates rendered from one data schema](docs/preview.png)
 
